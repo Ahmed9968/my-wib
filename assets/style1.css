@@ -49,10 +49,18 @@ header div ul li .link:hover {
   padding-top: 3em;
   padding-right: 1em;
   padding-left: 1em;
-  background-color: #000;
+  background-color: var(--color1);
   height: calc(100vh + 3em);
   width: 100%;
 }
-.section .info {
-  padding-top: 6em;
+.section .Hello{
+  color: #ff7300;
+  font-size: 4em;
+  text-shadow: 0px 0px 30px #ff5100;
+  text-transform: uppercase;
 }
+.section .info {
+  padding-top: 3em;
+  padding-left: 3em;
+}
+

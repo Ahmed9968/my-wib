@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --color1: #1a1a1f;
+  --font1: #ff5100;
+  --font2: #ff7300;
+}
+
+header {
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color1);
+}
+header .title {
+  font-weight: 700;
+  font-size: 35px;
+  margin-left: 100px;
+  color: var(--font1);
+}
+header div ul {
+  padding-right: 100px;
+}
+header div ul li {
+  font-size: 13px;
+}
+header div ul li .link {
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #eee;
+}
+header div ul li .link:hover {
+  color: var(--font2);
+}
+/* ===header==================================================================================================== */
+
+.section {
+  padding-top: 3em;
+  padding-right: 1em;
+  padding-left: 1em;
+  background-color: #000;
+  height: calc(100vh + 3em);
+  width: 100%;
+}
+.section .info {
+  padding-top: 6em;
+}

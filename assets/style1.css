@@ -8,8 +8,14 @@
 
 :root {
   --color1: #1a1a1f;
-  --font1: #ff5100;
-  --font2: #ff7300;
+
+  --color2: #213a57;
+  --color3: #0b6477;
+  --color4: #14919b;
+  --color5: #0ad1c8;
+  --color6: #45dfb1;
+  --color7: #80ed99;
+
 }
 
 header {
@@ -24,9 +30,10 @@ header {
 }
 header .title {
   font-weight: 700;
-  font-size: 35px;
+  font-size: 40px;
   margin-left: 100px;
-  color: var(--font1);
+  color: var(--color5);
+  text-shadow: var(--color5) 0px 0px 10px;
 }
 header div ul {
   padding-right: 100px;
@@ -40,14 +47,14 @@ header div ul li .link {
   color: #eee;
 }
 header div ul li .link:hover {
-  color: var(--font2);
+  color: var(--color6);
 }
 /* ===header==================================================================================================== */
 
 .section {
   padding-top: 6em;
   background-color: var(--color1);
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -57,20 +64,20 @@ header div ul li .link:hover {
 .Profile {
   background-image: url(images/p1.jpg);
   background-repeat: no-repeat;
-  height: 500px;
-  width: 500px;
+  height: calc(50vw - 100px);
+  width: calc(50vw - 100px);
   background-size: cover;
   overflow: hidden;
   border-radius: 99999px;
-  box-shadow: 0px 0px 9px 9px #ff5100, 0px 0px 20px 1px #ff7300 inset,
-    0px 0px 0px 0px #000 inset;
-  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 0px 9px 9px var(--color4),
+    0px 0px 20px 1px var(--color5) inset,
+    0px 0px 30px 2px var(--color2) inset;
 }
 
 .section .Hello {
-  color: #ff7300;
-  font-size: 5em;
-  text-shadow: 0px 0px 30px #ff5100;
+  color: var(--color5);
+  font-size: calc(10px + 10vw);
+  text-shadow: 0px 0px 30px var(--color5);
   text-transform: uppercase;
 }
 .section h3 p {
